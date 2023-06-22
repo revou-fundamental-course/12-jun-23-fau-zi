@@ -138,8 +138,8 @@ function _cmnShowErrorMessageBottomOfTheInputField(fieldID,errorMessage)
     
     var errorMessageElement = document.createElement("p"); // create a p tag for error message
     errorMessageElement.innerHTML = errorMessage; // set the error message in the p tag
-    errorMessageElement.classList.add("tool-error-message"); // add the error message stye clsss
-    inputField.parentNode.insertBefore(errorMessageElement, inputField.nextSibling); // set the error message uder the error feild
+    errorMessageElement.classList.add("tool-error-message"); // add the error message stye class
+    inputField.parentNode.insertBefore(errorMessageElement, inputField.nextSibling); // set the error message under the error field
 }
 
 function _cmnHideElement(elementId)
