@@ -110,11 +110,6 @@ body{
     width: 130px;
     background: rgb(0, 255, 21);
 }
-.tool-btn-reverse{
-    width: 130px;
-    background: rgb(255, 247, 0);
-    color: rgb(58, 25, 25);
-}
 .tool-output-box{
     display: none;
     width: 100%;
