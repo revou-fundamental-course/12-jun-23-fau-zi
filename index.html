@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Temperature° Conversion</title>
+</head>
+<body>
+    <div class="tool-container">
+        <h1>Temperature° Conversion</h1>
+        <div class="tool-container-field-group">
+            <div id="temperatureInput" class="tool-container-field">             
+                <div class="tool-input-group">
+                    <div class="tool-input-label">
+                        <label for="fromUnit">From:</label>                        
+                    </div>
+                    <select name="temperature-from" class="tool-select-group" id="fromUnit">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                    </select>             
+                    <input id="inputTemperature" placeholder="Input" type="text" name="from-temperature" min="0" class="tool-input-field">
+                </div>
+                
+                <div class="tool-input-group">
+                    <div class="tool-input-label">
+                        <label for="toUnit">To:</label>                        
+                    </div>
+                    <select name="to-from" class="tool-select-group" id="toUnit">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                    </select>
+                    <input readonly id="outputTemperature" placeholder="Output" type="number" name="to-temperature" min="0" class="tool-input-field readonly-background">
+                </div>
+
+                <div class="tool-input-group">
+                    <button onclick="ResetTemperatureCalculator()" class="tool-btn tool-btn-reset">Reset</button>
+                    <button onclick="CalculateTemperature()" class="tool-btn tool-btn-calculate">Convert</button>
+                    <button onclick="ReverseTemperatureCalculator()" class="tool-btn tool-btn-reverse">Reverse</button>
+                </div> 
+            </div>
+            
+            <div class="tool-container-field">
+                <div id="OutputInfo" class="tool-output-information tool-output-box">
+                    <h2>Information</h2>
+                    <ul type="square">
+                        <li>Enter the temperature value in the <b><i>From Input</i></b> field you want to convert.</li>
+                        <li>Select your given temperature's unit from the <b>From Select Box</b>.</li>
+                        <li>Select your desired temperature's unit from the <b>To Select Box</b>.</li>
+                        <li>The Converted value will show in the <b><i>To Input Box</i></b>.</li>
+                    </ul>
+                </div>
+                
+                <div id="OutputResult" class="tool-output-results tool-output-box">
+                    <h2>Result</h2>
+                    
+                    <p id="temperatureResult"></p>
+
+                    <p><b>Formula:</b> <span id="temperatureFormula"></span></p>
+                   
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+    <!-- javascript -->
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
