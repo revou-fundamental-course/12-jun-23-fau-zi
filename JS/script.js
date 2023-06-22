@@ -1,4 +1,4 @@
-//1st function
+    //1st function
 
 function ValidateTemperatureCalculatorForm()
 {
@@ -111,7 +111,7 @@ function formatResult(inputTemperature,outputTemperature,fromUnit,toUnit){
 
 
 
-// 2nd function
+    // 2nd function
 
 function _cmnRemoveAllErrorMessage()
 {
